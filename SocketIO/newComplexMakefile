@@ -1,0 +1,19 @@
+## -*- Makefile -*-
+##
+## User: gstafford
+## Time: Feb 11, 2013 8:22:39 PM
+## Makefile created by Oracle Solaris Studio.
+##
+## This file is generated automatically.
+##
+SOURCE_PATH=/home/gstafford/Documents/SocketIO
+all:
+	gcc -o server ${SOURCE_PATH}/server.c
+	gcc -o client ${SOURCE_PATH}/client.c
+
+#### Clean target deletes all generated files ####
+clean:
+
+# Enable dependency checking
+.KEEP_STATE:
+.KEEP_STATE_FILE:.make.state.GNU-amd64-Linux

@@ -1,0 +1,14 @@
+Source: http://www.tutorialspoint.com/unix_sockets/socket_server_example.htm
+
+Robot (laptop)
+=================
+gcc -o server server.c
+./server 51717
+
+Controller (Raspberry Pi)
+=================
+scp client.c pi@192.168.1.11:OpenCV/socket_io/
+gcc -o client client.c
+./client 192.168.1.11 51717
+
+Message to send...
